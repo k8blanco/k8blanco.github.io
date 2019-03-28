@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Katherine White</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Style-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Yeseva+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/projects.css" />
+
+
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <main>
+
+    <!--NavBar for Mobile-->
+    <nav>
+      <div class="nav-wrapper black col s12 z-depth-3">
+        <a href="#" data-target="dropdown1" class="dropdown-trigger"><i class="fas fa-bars"></i> </a>
+
+        <ul id="dropdown1" class="dropdown-content black">
+          <li><a href="about.html" class="waves-effect" id="aboutLink">about</a></li>
+          <li><a href="projects.html" class="waves-effect" id="projectsLink">projects</a></li>
+          <li><a href="contact.html" class="waves-effect" id="contactLink">contact</a></li>
+          <li><a href="index.html" class="waves-effect" id="homeLink">home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="row">
+      <div class="black hoverable z-depth-3 project-container">
+
+        <!--Carousel for Mobile & Tablet-->
+        <div class="carousel carousel-slider center hide-on-large-only">
+
+          <!-- Demo & Github Buttons-->
+          <div class="carousel-fixed-item center">
+            <a class="btn btn-small demoBtn">DEMO</a>
+            <a class="btn btn-small gitBtn" href="https://github.com/k8blanco">GITHUB</a>
+          </div>
+
+          <!-- Carousel Items -->
+          <div class="carousel-item white-text z-depth-3" id="one"
+            href="https://dirkcallaway.github.io/Concerts-Cuisine/">
+            <h2>Concerts & Cuisine</h2>
+            <div class="carousel-fixed-item center img">
+              <img src="assets/images/CC1.png" class="responsive-img z-depth-3" style="max-height: 320px" alt="C&C App">
+            </div>
+            <p class="white-text">Collaborative Project. JS & MaterializeCSS</p>
+            <!-- <button class="btn btn-small waves-effect waves-light demoBtn" type="submit" name="action" id="CCBtn">DEMO</button> -->
+          </div>
+
+          <div class="carousel-item white-text z-depth-3" id="two" href="https://obscure-bastion-10259.herokuapp.com/">
+            <h2>Eat-Da-Burger</h2>
+            <div class="carousel-fixed-item center img">
+              <img src="assets/images/Burger1.png" class="responsive-img z-depth-3" style="max-height: 320px"
+                alt="Burger App">
+            </div>
+            <p class="white-text">Fullstack JS App. Veggie Friendly</p>
+            <!-- <button class="btn btn-small waves-effect waves-light demoBtn" type="submit" name="action" id="BurgBtn">DEMO</button> -->
+          </div>
+
+          <div class="carousel-item white-text z-depth-3" id="three"
+            href="https://radiant-citadel-94515.herokuapp.com/">
+            <h2>Friend Finder</h2>
+            <div class="carousel-fixed-item center img">
+              <img src="assets/images/Friend1.png" class="responsive-img z-depth-3" style="max-height: 320px"
+                alt="FF App">
+            </div>
+            <p class="white-text">Lonely? Find a Friend. Includes Dogs.</p>
+            <!-- <button class="btn btn-small waves-effect waves-light demoBtn" type="submit" name="action" id="FFBtn">DEMO</button> -->
+          </div>
+
+          <div class="carousel-item white-text z-depth-3" id="four"
+            href="https://drive.google.com/file/d/126RF6BhyMs-2c5pKn6rYWaxOYH0EE2QI/view?usp=sharing">
+            <h2>LIRI</h2>
+            <div class="carousel-fixed-item center img">
+              <img src="assets/images/LIRI1.png" class="responsive-img z-depth-3" style="max-height: 320px"
+                alt="FF App">
+            </div>
+            <p class="white-text">SIRI, but not; Node.js</p>
+            <!-- <button class="btn btn-small waves-effect waves-light demoBtn" type="submit" name="action" id="LIBtn">DEMO</button> -->
+          </div>
+
+          <div class="carousel-item white-text z-depth-3" id="five"
+            href="https://drive.google.com/file/d/1HI2fn3qL3xg7GWDsD899PqVRSSkCxRN7/view ">
+            <h2>Bamazon</h2>
+            <div class="carousel-fixed-item center img">
+              <img src="assets/images/Bamazon1.png" class="responsive-img z-depth-3" style="max-height: 320px"
+                alt="FF App">
+            </div>
+            <p class="white-text">Node.js Storefront; MySQL</p>
+            <!-- <button class="btn btn-small waves-effect waves-light demoBtn" type="submit" name="action" id="BamBtn">DEMO</button> -->
+          </div>
+
+        </div>
+
+        <!--Projects List for Desktop-->
+        <div class="resp-container hide-on-med-and-down">
+          <div class="resp-text">
+            <div class="icons">
+
+              <div class="row">
+                <!--C&C-->
+                <img class="modal-trigger hvr-bob" data-target="modal1" src="assets/images/icons-01.png" id="ccIcon"
+                  style="max-height: 150px">
+                <!--FF-->
+                <img class="modal-trigger hvr-bob" data-target="modal2" src="assets/images/icons-02.png" id="ffIcon"
+                  style="max-height: 150px">
+                <!--BURGER-->
+                <img class="modal-trigger hvr-bob" data-target="modal3" src="assets/images/icons-03.png" id="burgIcon"
+                  style="max-height: 150px">
+              </div>
+
+              <div class="row">
+                <!--BOOK-->
+                <img class="modal-trigger hvr-bob" data-target="modal4" src="assets/images/icons-04.png" id="bookIcon"
+                  style="max-height: 150px">
+                <!--BAMAZON-->
+                <img class="modal-trigger hvr-bob" data-target="modal5" src="assets/images/icons-05.png" id="bamIcon"
+                  style="max-height: 150px">
+                <!--LIRI-->
+                <img class="modal-trigger hvr-bob" data-target="modal6" src="assets/images/icons-06.png" id="liriIcon"
+                  style="max-height: 150px">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--SideNav-->
+        <ul id="slide-out" class="sidenav col m2 offset-m1 sidenav-fixed">
+          <ul class="right hide-on-med-and-down" id="navLinks">
+            <li><a href="about.html" class="waves-effect" id="aboutLink">about</a></li>
+            <li><a href="projects.html" class="waves-effect" id="projectsLink">projects</a></li>
+            <li><a href="contact.html" class="waves-effect" id="contactLink">contact</a></li>
+            <li><a href="index.html" class="waves-effect" id="homeLink">home</a></li>
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+
+    <!--Modals-->
+
+    <!--C&C-->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="card horizontal col s8 black white-text projectCard">
+
+          <div class="card-image" style="max-width: 50%">
+            <img src="assets/images/CC1.png">
+          </div>
+
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4 class="center">Concerts & Cuisine</h4>
+              <p class="white-text">Plan a musical night out with this sleek and intuitive app!
+                Enter your zipcode and let us do the planning for you - we'll find nearby concerts and
+                and give you a list of delicious restaurants near the concert venue of your choice. Built
+                collaboratively with a remote team</p><br>
+
+
+              <ul class="center">
+                <h5 class="center">Technologies:</h5>
+                <li>JavaScript/jQuery</li>
+                <li>Google Material Design/Materialize CSS</li>
+                <li>MapQuest, Songkick, & Zomato APIs</li>
+                <li>Git/Github</li>
+              </ul>
+
+              <div class="center-align">
+                <a href="https://dirkcallaway.github.io/Concerts-Cuisine/" class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/Concerts-Cuisine" class="btn-flat btn-small center"
+                  id="githubMe">Github <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FF-->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <div class="card horizontal col s8 black white-text projectCard">
+
+          <div class="card-image" style="max-width: 50%">
+            <img src="assets/images/Friend1.png">
+          </div>
+
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4 class="center">Friend Finder</h4>
+              <p class="white-text">Need a friend? We'll get you a friend. Fill out a short survey on your preferences
+                and we'll find you your best match! Includes dogs, of course.</p><br>
+
+
+              <ul class="center">
+                <h5 class="center">Technologies:</h5>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Materialize CSS</li>
+                <li>Heroku</li>
+                <li>Git/Github</li>
+              </ul>
+
+              <div class="center-align">
+                <a href="https://radiant-citadel-94515.herokuapp.com/ " class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/FriendFinder" class="btn-flat btn-small center"
+                  id="githubMe">Github <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--BURGER-->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <div class="card horizontal col s8 black white-text projectCard">
+
+          <div class="card-image" style="max-width: 50%">
+            <img src="assets/images/Burger1.png">
+          </div>
+
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4 class="center">Eat-Da-Burger!</h4>
+              <p class="white-text">Eat a burger, add a burger, and eat a burger again! A deployed Fullstack App
+                showcasing front and back-end integration. Veggie friendly.</p><br>
+
+
+              <ul class="center">
+                <h5 class="center">Technologies:</h5>
+                <li>MySQL</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Handlebars</li>
+                <li>MVC</li>
+                <li>Heroku</li>
+              </ul>
+
+              <div class="center-align">
+                <a href="https://obscure-bastion-10259.herokuapp.com/" class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/burger" class="btn-flat btn-small center" id="githubMe">Github <i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--BOOKMATCH-->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <div class="card horizontal col s8 black white-text projectCard">
+
+          <div class="card-image" style="max-width: 50%">
+            <img src="assets/images/bookMatch-02.png">
+          </div>
+
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4 class="center">bookMatch</h4>
+              <p class="white-text">Find your next great read!  A powerful Fullstack App that gives you 
+                recs based on your fav book or author, with a pleasing and fun UI that you'll come back to
+                again and again.
+              </p><br>
+
+
+              <ul class="center">
+                <h5 class="center">Technologies:</h5>
+                <li>Sequelize/MySQL</li>
+                <li>Node.js, Express, Handlebars</li>
+                <li>Materialize CSS & Sass</li>
+                <li>Heroku</li>
+                <li>TasteDive, GoogleBooks, Embedded Viewer APIs</li>
+              </ul>
+
+              <div class="center-align">
+                <a href="https://fast-beyond-47318.herokuapp.com/" class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/bookMatch" class="btn-flat btn-small center" id="githubMe">Github
+                  <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--BAMAZON-->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+          <div class="card horizontal col s8 black white-text projectCard">
+  
+            <div class="card-image" style="max-width: 50%">
+              <img src="assets/images/Bamazon1.png">
+            </div>
+  
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4 class="center">Bamazon</h4>
+                <p class="white-text">An Amazon-esque storefront that takes orders from customers, updates inventory, and totals sales. 
+                  Includes Customer, Manager, and Supervisor interfaces and talks to MySQL DB.
+                </p><br>
+  
+  
+                <ul class="center">
+                  <h5 class="center">Technologies:</h5>
+                  <li>MySQL</li>
+                  <li>Node.js</li>
+                  <li>MySQL, Inquirer, CLI-Table, & Colors packages</li>
+                </ul>
+  
+                <div class="center-align">
+                  <a href="https://drive.google.com/file/d/1HI2fn3qL3xg7GWDsD899PqVRSSkCxRN7/view" class="btn-flat btn-small" id="demoMe">Demo
+                    <i class="fas fa-laptop-code"></i></a>
+                  <a href="https://github.com/k8blanco/bamazon" class="btn-flat btn-small center" id="githubMe">Github
+                    <i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--LIRI-->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+          <div class="card horizontal col s8 black white-text projectCard">
+  
+            <div class="card-image" style="max-width: 50%">
+              <img src="assets/images/LIRI1.png">
+            </div>
+  
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4 class="center">LIRI</h4>
+                <p class="white-text">A Language Interpretation & Recognition Interface; LIRI takes user
+                  input from a series of commands.  Interfaces with various APIs and uses multiple Node packagaes. 
+                  One of the best features is its scalability - it can be greatly (and easily!) expanded!
+                </p><br>
+  
+  
+                <ul class="center">
+                  <h5 class="center">Technologies:</h5>
+                  <li>Node.js</li>
+                  <li>Inquirer, Axios, Spotify, Moment.js & FS</li>
+                  <li>Colors node package for a fun interface</li>
+                </ul>
+  
+                <div class="center-align">
+                  <a href="https://drive.google.com/file/d/126RF6BhyMs-2c5pKn6rYWaxOYH0EE2QI/view?usp=sharing" class="btn-flat btn-small" id="demoMe">Demo
+                    <i class="fas fa-laptop-code"></i></a>
+                  <a href="https://github.com/k8blanco/liri" class="btn-flat btn-small center" id="githubMe">Github
+                    <i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+  </main>
+
+  <!--Footer-->
+  <!-- <footer class="page-footer black"> -->
+  <!-- <div class="container"> -->
+  <!-- <div class="row"> -->
+  <!-- <div class="col l6 s12">
+          <h5 class="white-text">katherine white</h5>
+        </div> -->
+  <!-- <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="footer-copyright"> -->
+  <!-- <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div> -->
+  <!-- </div> -->
+  <!-- </footer> -->
+
+
+</body>
+
+<!--JS-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="assets/javascript/portfolio2.js"></script>
+
+
+
+<!-- 
+https://dirkcallaway.github.io/Concerts-Cuisine/ (CC)
+https://obscure-bastion-10259.herokuapp.com/ (burger)
+https://radiant-citadel-94515.herokuapp.com/ (ff)
+https://drive.google.com/file/d/126RF6BhyMs-2c5pKn6rYWaxOYH0EE2QI/view?usp=sharing (liri)
+https://drive.google.com/file/d/1HI2fn3qL3xg7GWDsD899PqVRSSkCxRN7/view (bamazon) -->
+
+
+</html>

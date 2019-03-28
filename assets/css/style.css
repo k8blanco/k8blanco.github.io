@@ -1,0 +1,334 @@
+/* MOBILE FIRST */
+
+[class*="col-"] {
+  width: 100%;
+}
+
+body {
+  background-image: url("../images/blurry.jpg");
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-right: 40px; /*need to change this to % - 3%? */
+  overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 150%;
+}
+
+.resp-text {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 25px;
+  color: white;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  color: white;
+}
+
+.name {
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+.jobTitle {
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-bottom: 100px;
+}
+
+
+/* Mobile Sidenav */
+
+.dropdown-trigger {
+  margin-left: 28px;
+  color: #008efe;
+}
+
+#homeLink {
+  color: #fdca00;
+  margin: 0px;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border-right: 1px solid #fdca00;
+}
+
+#aboutLink {
+  color: #fdca00;
+  margin: 0px;
+  text-align: right;
+  font-size: 16px;
+  border-right: 1px solid #fdca00;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+#projectsLink {
+  color: #008efe;
+  margin: 0px;
+  text-align: right;
+  font-size: 16px;
+  border-right: 1px solid #fdca00;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+#contactLink {
+  color: #ff0db3;
+  margin: 0px;
+  text-align: right;
+  font-size: 16px;
+  border-right: 1px solid #fdca00;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Floating Action Buttons */
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.contact {
+  background-color: #008efe;
+}
+
+.contact:hover {
+  background-color: #fdca00;
+}
+
+
+.resume {
+  background-color: #ff0db3;
+}
+
+.resume:hover {
+  background-color: #008efe;
+}
+
+
+.linkedIn {
+  background-color: #fdca00;
+}
+
+.linkedIn:hover {
+  background-color: #ff0db3;
+}
+
+
+.github {
+  background-color: #008efe;
+}
+
+.github:hover {
+  background-color: #fdca00;
+}
+
+
+.email {
+  background-color: #fdca00;
+}
+
+.email:hover {
+  background-color: #ff0db3;
+}
+
+
+
+
+/* ------------------------ Media Queries ---------------------------------- */
+
+/* TABLET PORTRAIT / DESKTOP / LAPTOP */
+@media only screen and (min-width : 768px) {
+  h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  .resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 42%;
+  }
+
+  .resp-text {
+    position: absolute;
+    top: 18%;
+    left: 1%;
+    width: 100%;
+    height: 50%;
+  }
+
+  #navLinks {
+    position: absolute;
+    top: 28.5%;
+  }
+
+  .sidenav {
+    background-color: transparent;
+  }
+
+  .dropdown-trigger {
+    visibility: hidden;
+  }
+
+  .name {
+    margin-bottom: 10px;
+  }
+
+  .jobTitle {
+    margin-top: 10px;
+  }
+
+  nav {
+    margin-bottom: 0px;
+  }
+
+  #aboutLink {
+    color: #fdca00;
+    margin: 0px;
+    text-align: right;
+    font-size: 20px;
+    border-right: 1px solid #fdca00;
+    padding-right: 8%;
+  }
+
+
+  #projectsLink {
+    color: #008efe;
+    margin: 0px;
+    text-align: right;
+    font-size: 20px;
+    border-right: 1px solid #fdca00;
+    padding-right: 8%;
+  }
+
+  #contactLink {
+    color: #ff0db3;
+    margin: 0px;
+    text-align: right;
+    font-size: 20px;
+    border-right: 1px solid #fdca00;
+    padding-right: 8%;
+  }
+
+  #homeLink {
+    color: #fdca00;
+    margin: 0px;
+    text-align: right;
+    font-size: 20px;
+    border-right: 1px solid #fdca00;
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+
+  header,
+  main,
+  footer,
+  .wrapper {
+    padding-left: 0;
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP WIDESCREEN */
+@media only screen and (min-width : 1500px) {}
