@@ -9,6 +9,8 @@ $(document).ready(function(){
       isFixed: true
     });
 
+    $('.parallax').parallax(); 
+
     $('.fixed-action-btn').floatingActionButton({
       direction: "left"
     });
@@ -47,31 +49,21 @@ $(document).ready(function(){
     $(".demoBtn").on("click", function() {
       console.log("you clicked me! My href is: ", demoLink);
     })
- 
-  });
-  
+ });
 
-// function carouselSize(x) {
-//   if (x.matches) {
-//     $(".carousel.carousel-slider").carousel({
-//       fullWidth: true,
-//       indicators: true,
-//       numVisible: 1
-      
-//     });
-//   } else {
-//     $(".carousel.carousel-slider").carousel({
-//       fullWidth: false,  
-//       indicators: false,
-//       numVisible: 3
-//     });
-//   }
-// }
+//!! LOAD INTO NPM !! typewriter.js
+// var app = document.getElementById('app');
 
-// var x = window.matchMedia("(max-width: 750px)");
+// var typewriter = new Typewriter(app, {
+//     loop: true
+// });
 
-
-  
-  // $("$demo").on("click", function(){
-
-  // };
+// typewriter.typeString('Full Stack Developer')
+//     .pauseFor(2500)
+//     .deleteAll()
+//     .typeString('Strings can be removed')
+//     .pauseFor(2500)
+//     .deleteChars(7)
+//     .typeString('<strong>altered!</strong>')
+//     .pauseFor(2500)
+//     .start();

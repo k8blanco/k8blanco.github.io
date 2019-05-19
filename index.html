@@ -13,6 +13,7 @@
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
 
@@ -27,7 +28,7 @@
   <main>
 
     <!--NavBar for Mobile-->
-    <nav>
+    <!-- <nav>
       <div class="nav-wrapper black col s12 z-depth-3">
         <a href="#" data-target="dropdown1" class="dropdown-trigger"><i class="fas fa-bars"></i> </a>
 
@@ -38,76 +39,403 @@
           <li><a href="index.html" class="waves-effect" id="homeLink">home</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
+    <!--Vertical Line-->
+    <div class="vl hide-on-med-and-down"></div>
 
-    <!-- Main Content -->
-    <div class="row">
-      <div class="row">
+    <!-- Name & Title-->
+    <div class="section black" id="parOne">
+      <div class="row container nameContainer">
+        <h1 class="header">katherine white</h1>
+        <h2 class="jobTitle">Full<br>Stack<br>Developer</h2>
+        <!--For typewriter.js once configured-->
+        <!-- <div id="app"></div> -->
+      </div>
+    </div>
 
-        <!-- Name & title-->
-        <div class="black hoverable z-depth-3 resp-container">
-          <div class="resp-text">
-            <div class="col s12 m8 offset-m2">
-              <h1 class="name">katherine white</h1>
-              <div class="row">
-                <div class="col s12">
-                  <h2 class="jobTitle">Full<br>Stack<br>Developer</h2>
+    <!--Parallax Section-->
+    <div class="parallax-container" style="max-height: 450px">
+      <div class="parallax"><img src="assets/images/blurry.jpg"></div>
+    </div>
+
+    <!--Projects Section-->
+    <div class="section black">
+      <div class="row container">
+        <!--add typewriter effect here-->
+        <h3>projects</h3>
+        <div class="projectContainer">
+
+          <!--C&C-->
+          <div class="col s12 m4">
+            <div class="card medium black sticky-action">
+              <div class="card-image">
+                <img class="hvr-bob activator" src="assets/images/icons-01.png" id="ccIcon"
+                  style="max-height: 200px; max-width: 200px">
+              </div>
+              <div class="card-content">
+                <span class="card-title white-text center">Concerts & Cuisine</span>
+                <p class="white-text center">Plan a musical night out!</p>
+                <!-- <i class="fas fa-lg fa-info-circle activator infoIcon center"></i> -->
+              </div>
+              <div class="card-action center">
+                <a href="https://dirkcallaway.github.io/Concerts-Cuisine/" class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/Concerts-Cuisine" class="btn-flat btn-small" id="githubMe">Github
+                  <i class="fab fa-github"></i></a>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title white-text">
+                  <i class="material-icons right">close</i><br>
+                </span>
+                <div class="row">
+                  <p class="white-text center">Enter your zipcode and let us do the planning for you - we'll find nearby
+                    concerts and
+                    give you a list of delicious restaurants near the venue.</p>
+                </div>
+                <div class="row">
+                  <img src="assets/images/CC.png" class="activator" style="max-width: 100%">
+                </div>
+                <div class="row">
+                  <ul class="center white-text">
+                    <h5 class="center">Built with:</h5>
+                    <li>JavaScript/jQuery</li>
+                    <li>Google Material Design</li>
+                    <li>Materialize CSS</li>
+                    <li>MapQuest, Songkick, & Zomato</li>
+                    <li>Git for Version Control</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          <!--SideNav-->
-          <ul id="slide-out" class="sidenav col m2 offset-m1 sidenav-fixed">
-            <ul class="right hide-on-med-and-down" id="navLinks">
-              <li><a href="about.html" class="waves-effect" id="aboutLink">about</a></li>
-              <li><a href="projects.html" class="waves-effect" id="projectsLink">projects</a></li>
-              <li><a href="contact.html" class="waves-effect" id="contactLink">contact</a></li>
-              <li><a href="index.html" class="waves-effect" id="homeLink">home</a></li>
-            </ul>
-          </ul>
+          <!--bookMatch-->
+          <div class="col s12 m4">
+            <div class="card medium black sticky-action">
+              <div class="card-content">
+                <div class="card-image">
+                  <img class="hvr-bob activator" src="assets/images/icons-04.png" id="bookIcon"
+                    style="max-height: 200px; max-width: 200px">
+                </div>
+                <span class="card-title white-text center">bookMatch
+                  <!-- <i class="fas fa-md fa-info-circle activator infoIcon"></i> -->
+                </span>
+                <p class="white-text center">Find your next great read!</p>
+              </div>
+              <div class="card-action center">
+                <a href="https://fast-beyond-47318.herokuapp.com/" class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/bookMatch" class="btn-flat btn-small center" id="githubMe">Github
+                  <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title white-text">
+                  <i class="material-icons right">close</i><br>
+                </span>
+                <div class="row">
+                  <p class="white-text center">
+                    A powerful Fullstack App that gives you
+                    recommendations based on your favorite book or author, with a fun UI that you'll love.
+                  </p>
+                </div>
+                <div class="row">
+                  <img src="assets/images/bookMatch-03.png" class="activator" style="max-width: 100%">
+                </div>
+                <div class="row">
+                  <ul class="center white-text">
+                    <h5 class="center">Built with:</h5>
+                    <li>Sequelize/MySQL</li>
+                    <li>Node.js, Express, Handlebars</li>
+                    <li>Materialize CSS & Sass</li>
+                    <li>Heroku</li>
+                    <li>TasteDive, GoogleBooks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--FF-->
+          <div class="col s12 m4">
+            <div class="card medium black sticky-action">
+              <div class="card-image">
+                <img class="hvr-bob activator" src="assets/images/icons-02.png" id="ffIcon"
+                  style="max-height: 200px; max-width: 200px">
+              </div>
+              <div class="card-content">
+                <span class="card-title white-text center">Friend Finder
+                  <!-- <i class="fas fa-md fa-info-circle activator infoIcon"></i> -->
+                </span>
+                <p class="white-text center">Need a friend? We'll find you a friend.</p>
+              </div>
+              <div class="card-action center">
+                <a href="https://radiant-citadel-94515.herokuapp.com/ " class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/FriendFinder" class="btn-flat btn-small center"
+                  id="githubMe">Github <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title white-text">
+                  <i class="material-icons right">close</i><br>
+                </span>
+                <div class="row">
+                  <p class="white-text center">Fill out a short survey on your
+                    preferences
+                    and we'll find you your best friend match. Includes dogs, of course.</p>
+                </div>
+                <div class="row">
+                  <img src="assets/images/Friend1.png" class="activator" style="max-width: 100%">
+                </div>
+                <div class="row">
+                  <ul class="center white-text">
+                    <h5 class="center">Built with:</h5>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Materialize CSS</li>
+                    <li>Heroku</li>
+                    <li>Git for Version Control</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Burger-->
+          <div class="col s12 m4">
+            <div class="card medium black sticky-action">
+              <div class="card-content">
+                <div class="card-image">
+                  <img class="hvr-bob activator" src="assets/images/icons-03.png" id="burgIcon"
+                    style="max-height: 200px; max-width: 200px">
+                </div>
+                <span class="card-title white-text center">Eat-Da-Burger
+                  <!-- <i class="fas fa-md fa-info-circle activator infoIcon"></i> -->
+                </span>
+                <p class="white-text center">Eat a burger, add a burger, and eat a burger again!
+                </p>
+              </div>
+              <div class="card-action center">
+                <a href="https://obscure-bastion-10259.herokuapp.com/" class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/burger" class="btn-flat btn-small center" id="githubMe">Github
+                  <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title white-text">
+                  <i class="material-icons right">close</i><br>
+                </span>
+                <div class="row">
+                  <p class="white-text center">A deployed Fullstack App
+                    showcasing front and back-end integration. Veggie friendly.</p>
+                </div>
+                <div class="row">
+                  <img src="assets/images/Burger.png" class="activator" style="max-width: 100%">
+                </div>
+                <div class="row">
+                  <ul class="center white-text">
+                    <h5 class="center">Built with:</h5>
+                    <li>MySQL</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>Handlebars</li>
+                    <li>MVC</li>
+                    <li>Heroku</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Bamazon-->
+          <div class="col s12 m4">
+            <div class="card medium black sticky-action">
+              <div class="card-image">
+                <img class="hvr-bob activator" src="assets/images/icons-05.png" id="bamIcon"
+                  style="max-height: 200px; max-width: 200px">
+              </div>
+              <div class="card-content">
+                <span class="card-title white-text center">Bamazon
+                  <!-- <i class="fas fa-md fa-info-circle activator infoIcon"></i> -->
+                </span>
+                <p class="white-text center">A circa 1998 Amazon-esque storefront.
+                </p>
+              </div>
+              <div class="card-action center">
+                <a href="https://drive.google.com/file/d/1HI2fn3qL3xg7GWDsD899PqVRSSkCxRN7/view"
+                  class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/bamazon" class="btn-flat btn-small center" id="githubMe">Github
+                  <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title white-text">
+                  <i class="material-icons right">close</i><br>
+                </span>
+                <div class="row">
+                  <p class="white-text center">Takes orders from customers, updates inventory,
+                    and totals sales.
+                    Includes various employee interfaces and talks to MySQL DB.</p>
+                </div>
+                <div class="row">
+                  <img src="assets/images/Bamazon.png" class="activator" style="max-width: 100%">
+                </div>
+                <div class="row">
+                  <ul class="center white-text">
+                    <h5 class="center">Built with:</h5>
+                    <li>MySQL</li>
+                    <li>Node.js</li>
+                    <li>MySQL, Inquirer, CLI-Table, & Colors packages</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--LIRI-->
+          <div class="col s12 m4">
+            <div class="card medium black sticky-action">
+              <div class="card-image">
+                <img class="hvr-bob activator" src="assets/images/icons-06.png" id="liriIcon"
+                  style="max-height: 200px; max-width: 200px">
+              </div>
+              <div class="card-content">
+                <span class="card-title white-text center">LIRI
+                  <!-- <i class="fas fa-md fa-info-circle activator infoIcon"></i> -->
+                </span>
+                <p class="white-text center">Language Interpretation & Recognition Interface.</p>
+              </div>
+              <div class="card-action center">
+                <a href="https://drive.google.com/file/d/126RF6BhyMs-2c5pKn6rYWaxOYH0EE2QI/view?usp=sharing"
+                  class="btn-flat btn-small" id="demoMe">Demo
+                  <i class="fas fa-laptop-code"></i></a>
+                <a href="https://github.com/k8blanco/liri" class="btn-flat btn-small center" id="githubMe">Github
+                  <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title white-text">
+                  <i class="material-icons right">close</i><br>
+                </span>
+                <div class="row">
+                  <p class="white-text center">Takes user
+                    input from a series of commands. Interfaces with various APIs and uses multiple Node packages.
+                  </p>
+                </div>
+                <div class="row">
+                  <img src="assets/images/LIRI1.png" class="activator" style="max-width: 100%">
+                </div>
+                <div class="row">
+                  <ul class="center white-text">
+                    <h5 class="center">Built with:</h5>
+                    <li>Node.js</li>
+                    <li>Inquirer, Axios, Spotify, Moment.js & FS</li>
+                    <li>Colors node package for a fun interface</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
     </div>
+
+    <!--Parallax Section-->
+    <div class="parallax-container" style="max-height: 450px">
+      <div class="parallax"><img src="assets/images/blurry.jpg"></div>
     </div>
 
-    <!-- Floating Action Button-->
+    <!--About Section-->
+    <div class="section black">
+      <div class="row container">
+        <h3>about</h3>
+        <div class="aboutContainer">
+          <div class="row">
+            <div class="aboutPic">
+              <div class="col s12 m4">
+                <img src="assets/images/self-sidenav.png" alt="Katherine White" class="responsive-img circle">
+              </div>
+            </div>
+            <div class="col s11 m8">
+              <div class="card card-panel black" id="aboutCard">
+                <div class="card-content" id="aboutText">
+                  <p class="white-text">Katherine is a Full Stack Developer based in Denver, CO. She works primarily in
+                    the MERN stack
+                    but is constantly learning, improving, and seeking out new challenges. Katherine is passionate about
+                    sleek and intuitive
+                    UI/UX and elegant, stream-lined back-end code. Other than her passion for MERN and Material Design,
+                    her coding hobbies
+                    include learning more about AI, Machine Learning, and Augmented Reality. When not at her computer,
+                    Katherine can be found
+                    gardening, reading the latest Brandon Sanderson or George RR Martin novel*, or buying anything with
+                    llamas on it.
+                  </p>
+                  <p class="white-text" id="asterisk">*And Pat Rothfuss, if he would finish the third Kingkiller
+                    Chronicle</p>
+                </div>
+              </div>
+              <div class="center contactBtns">
+                <a class="btn-floating hvr-bob linkedIn" href="https://www.linkedin.com/in/katherine-white-274877a/"
+                  target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a class="btn-floating hvr-bob resume"
+                  href="https://docs.google.com/document/d/1BWWLPrXjzmj6cTflkkZkqgMSaWYW19XfqFL0kTnheP0/edit?usp=sharing"
+                  target="_blank"><i class="material-icons fa-lg">folder</i></a>
+                <a class="btn-floating hvr-bob github" href="https://github.com/k8blanco" target="_blank"><i
+                    class="fab fa-github fa-lg"></i></a>
+                <a class="btn-floating hvr-bob email" href="mailto:katiewhite303@gmail.com?Subject=Inquiry"
+                  target="_top"><i class="far fa-envelope fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Parallax Section-->
+    <div class="parallax-container" style="max-height: 450px">
+      <div class="parallax"><img src="assets/images/blurry.jpg"></div>
+    </div>
+
+    <!-- FAB-->
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large contact">
-        <i class="large fas fa-user-plus"></i>
+        <i class="material-icons fa-lg">person_add</i>
       </a>
       <ul>
         <li><a class="btn-floating hvr-bob linkedIn" href="https://www.linkedin.com/in/katherine-white-274877a/"
-            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
         <li><a class="btn-floating hvr-bob resume"
             href="https://docs.google.com/document/d/1BWWLPrXjzmj6cTflkkZkqgMSaWYW19XfqFL0kTnheP0/edit?usp=sharing"
-            target="_blank"><i class="fas fa-file"></i></a></li>
+            target="_blank"><i class="material-icons fa-lg">folder</i></a></li>
         <li><a class="btn-floating hvr-bob github" href="https://github.com/k8blanco" target="_blank"><i
-              class="fab fa-github"></i></a></li>
+              class="fab fa-github fa-lg"></i></a></li>
         <li><a class="btn-floating hvr-bob email" href="mailto:katiewhite303@gmail.com?Subject=Inquiry" target="_top"><i
-              class="far fa-envelope"></i></a></li>
+              class="far fa-envelope fa-lg"></i></a></li>
       </ul>
     </div>
 
-    </div>
-
-
-    </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
   </main>
 
+  <div class="section black" id="footerSection">
+    <footer class="page-footer black">
+      <div class="container">
+        <div class="row" id="footerRow">
+          <div class="col s2 pull-s1">
+            <iframe src="https://giphy.com/embed/NS5odE1sQVe9s6rYKE" frameBorder="0" class="giphy-embed llama"
+              allowFullScreen></iframe>
+            <p><a href="https://giphy.com/stickers/llama-alpaca-pakie-NS5odE1sQVe9s6rYKE"></a></p>
+          </div>
+          <div class="col s2">
+            <p id="copyrightText">© 2019 k8blanco</p>
+          </div>
+        </div>
+    </footer>
+  </div>
 </body>
 
 <!--JS-->
