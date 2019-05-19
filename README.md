@@ -1,6 +1,6 @@
 # k8blanco.github.io
 
-- Welcome to my portfolio!  I'm a Fullstack Developer based out of Denver, CO.  I love
+- Welcome to my portfolio!  I'm a Full Stack Developer based out of Denver, CO.  I love
 making sleek, cool UIs which usually utilize Google Material Design concepts and research, and I'm (only slightly) obsessed with color theory.
 - Databases and data are my jam, and while I work with both mySQL and mongoDB, I tend to prefer mongoDB.  Node.js and I are best buds.
 
