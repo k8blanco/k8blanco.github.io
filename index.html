@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/typing.css">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
 
@@ -27,20 +28,6 @@
 
   <main>
 
-    <!--NavBar for Mobile-->
-    <!-- <nav>
-      <div class="nav-wrapper black col s12 z-depth-3">
-        <a href="#" data-target="dropdown1" class="dropdown-trigger"><i class="fas fa-bars"></i> </a>
-
-        <ul id="dropdown1" class="dropdown-content black">
-          <li><a href="about.html" class="waves-effect" id="aboutLink">about</a></li>
-          <li><a href="projects.html" class="waves-effect" id="projectsLink">projects</a></li>
-          <li><a href="contact.html" class="waves-effect" id="contactLink">contact</a></li>
-          <li><a href="index.html" class="waves-effect" id="homeLink">home</a></li>
-        </ul>
-      </div>
-    </nav> -->
-
     <!--Vertical Line-->
     <div class="vl hide-on-med-and-down"></div>
 
@@ -48,9 +35,10 @@
     <div class="section black" id="parOne">
       <div class="row container nameContainer">
         <h1 class="header">katherine white</h1>
-        <h2 class="jobTitle">Full<br>Stack<br>Developer</h2>
-        <!--For typewriter.js once configured-->
-        <!-- <div id="app"></div> -->
+        <!-- <h2 class="jobTitle">Full<br>Stack<br>Developer</h2> -->
+        <div class="white-text" id="title">
+            <span class="typed white-text"></span>
+        </div>
       </div>
     </div>
 
@@ -430,8 +418,11 @@
               allowFullScreen></iframe>
             <p><a href="https://giphy.com/stickers/llama-alpaca-pakie-NS5odE1sQVe9s6rYKE"></a></p>
           </div> -->
-          <div class="col s2">
-            <p id="copyrightText">© 2019 k8blanco</p>
+          <div class="col s12">
+              <div class="white-text" id="copyright">
+                  <span class="typedCR white-text"></span>
+              </div>
+            <!-- <p id="copyrightText">© 2019 k8blanco</p> -->
           </div>
         </div>
     </footer>
@@ -440,8 +431,34 @@
 
 <!--JS-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript" ></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="assets/javascript/portfolio2.js"></script>
+
+<script>
+    var typed = new Typed(".typed", {
+      strings: ["Full<br>Stack<br>Developre", "Full<br>Stack<br>Developer"],
+      smartBackspace: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 1000,
+      startDelay: 1000,
+		  showCursor: false,
+		  cursorChar: "|",
+      loop: true,
+    });
+
+    var typedCR = new Typed(".typedCR", {
+      strings: ["© 2019 k8blanco ^1000 <br>llamas are awesome"],
+      typeSpeed: 80,
+      backSpeed: 100,
+      backDelay: 1000,
+      startDelay: 100,
+		  showCursor: false,
+		  cursorChar: "|",
+      loop: true,
+    })
+  </script>
 
 </html>

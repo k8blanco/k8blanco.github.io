@@ -1,0 +1,144 @@
+/* Typewriter Effect */
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+.typedCR::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+    opacity: 0;
+     display: none;
+ }
+ .typedCR-cursor{
+    opacity: 0;
+     display: none;
+ }
+
+
+ /*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Title Typewriter CSS */
+#title .line,
+#title span {
+    height: 4em;
+    line-height: 1.2em;
+    vertical-align: middle;
+}
+
+#title span {
+    display: inline-block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: "white";
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#title span.head {
+    margin-left: 4px;
+}
+
+#title span.space {
+    margin-right: 4px;
+}
+
+#title span.current::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 2.5rem;
+    top: 25%;
+    right: -3px;
+    transform: translateY(-50%);
+    border-left: 2px solid white;
+    animation: blink-caret 0.9s step-end infinite;
+}
+
+#title span.current.space::after {
+    right: -6px;
+}
+
+#title span.past {
+    color: gray;
+}
+
+/* Copyright Typewriter CSS */
+
+#copyright .line,
+#copyright span {
+    height: 4em;
+    line-height: 1.5em;
+    vertical-align: middle;
+    margin-top: 2em;
+}
+
+#copyright span {
+    display: inline-block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: "white";
+    font-size: 1em;
+}
+
+#copyright span.head {
+    margin-left: 4px;
+}
+
+#copyright span.space {
+    margin-right: 4px;
+}
+
+#copyright span.current::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 2.5rem;
+    top: 25%;
+    right: -3px;
+    transform: translateY(-50%);
+    border-left: 2px solid white;
+    animation: blink-caret 0.9s step-end infinite;
+}
+
+#copyright span.current.space::after {
+    right: -6px;
+}
+
+#copyright span.past {
+    color: gray;
+}
+
+
+/* @keyframes blink-caret {
+    0% { border-color: white }
+    50% { border-color: transparent }
+    100% { border-color: white }
+} */
+
